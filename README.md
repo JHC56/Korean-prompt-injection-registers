@@ -61,19 +61,6 @@ If you use this dataset, please cite our work
 }
 ```
 
-## Reproduce results
-
-`results/` contains the raw model outputs for 5 models × 2 prompt conditions, named `<model>_<baseline|definition>.jsonl`. Every row keeps the parsed verdict (`pred`) and the model's one sentence reason (`reason`), so the tables in the paper can be checked without a GPU.
-
-```bash
-pip install -r requirements.txt
-
-python src/analyze.py results/kanana_8b_baseline.jsonl   # one run
-python src/analyze.py results/*.jsonl                    # all runs
-```
-
-`analyze.py` reports accuracy, precision, recall, per-register macro-F1 / FPR / FNR, the Polite–Threat gap, and the tone-vs-structure split of the stated reasons. The rationale lexicon lives in `src/analyze.py`.
-
 ## Data sources
 
 Two public benchmarks were used.
