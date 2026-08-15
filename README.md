@@ -26,7 +26,7 @@ A prompt-injection detector should react to what an input *does*, not how it *so
 | casual   | 반말        | low       | neutral  | Non-honorific hae/haera endings             |
 | genz     | 젠지어      | low       | neutral  | Casual + neologisms and consonant abbrevs.  |
 | emoticon | 이모티콘    | low       | positive | Casual + positive-valence emoji             |
-| angry    | 분노        | low       | negative | Profanity with imperative endings           |
+| angry    | 분노체        | low       | negative | Profanity with imperative endings           |
 | threat   | 협박체      | low       | negative | Announced harm to the addressee             |
 
 See [`data/registers.json`](data/registers.json) for the full definitions.
